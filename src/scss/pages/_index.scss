@@ -1,0 +1,14 @@
+.text-with-line {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background: $bg-orange;
+    left: 0px;
+    right: 0;
+    bottom: -40px;
+    margin: auto;
+  }
+}

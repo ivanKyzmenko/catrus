@@ -1,0 +1,22 @@
+@import
+  "abstracts/variables";
+
+@import
+  "base/reset",
+  "base/typography",
+  "base/animation";
+
+@import
+  "components/catrus-carousel",
+  "components/custom",
+  "components/service",
+  "components/how-we-works",
+  "components/reviews";
+
+@import
+  "layout/grid",
+  "layout/header",
+  "layout/footer";
+
+@import
+  "pages/index";

@@ -1,0 +1,97 @@
+.catrus-service {
+  padding-top: 160px;
+  &__title {
+    font-size: 40px;
+    margin: 0 auto 0 auto;
+    font-weight: bold;
+    text-align: center;
+    color: $dark-blue;
+  }
+  &__top {
+    display: flex;
+    margin-top: 120px;
+    &-left {
+      min-width: 50%;
+      max-width: 50%;
+    }
+    &-right {
+      min-width: 50%;
+      max-width: 50%;
+      &__primary-text {
+        font-size: 16px;
+        line-height: 1.88;
+        color: $dark-blue;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+      &__secondary-text {
+        font-size: 16px;
+        line-height: 1.88;
+        color: $dark-blue;
+        margin-top: 30px;
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 60px;
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        width: 20%;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        &-pulsare {
+          &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 300px;
+            height: 300px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background-color: $orange-default;
+            animation: pulse-ring 1s both;
+          }
+        }
+        &-img {
+          margin-bottom: 60px;
+        }
+        &-text {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.67;
+          letter-spacing: normal;
+          text-align: center;
+          color: $dark-blue;
+          padding: 0 30px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+        }
+        &:hover {
+          background: $bg-orange;
+          transition: .2s;
+          .catrus-service__bottom-list__item-img {
+            transform: scale(1.4);
+            path {
+              fill: #fff;
+            }
+          }
+          .catrus-service__bottom-list__item-text {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
