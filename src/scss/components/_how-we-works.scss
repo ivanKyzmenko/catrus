@@ -1,0 +1,170 @@
+.catrus-hww {
+  height: 1320px;
+  background-color: $orange-default;
+  background-image: url("./assets/round-bg.png");
+  background-repeat: no-repeat;
+  background-position: 52% 46%;
+  margin-top: 60px;
+  .container-fit {
+    position: relative;
+    padding-top: 120px;
+  }
+  &__title {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    position: relative;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #ffffff;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 130px;
+      height: 2px;
+      background: #fff;
+      left: calc(50% - 65px);
+      bottom: -40px;
+    }
+  }
+  &__loader {
+    &-item {
+      position: absolute;
+      &__num {
+        position: absolute;
+        color: $orange-default;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px
+      }
+      &__text {
+        position: absolute;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+      &:nth-child(1) {
+        right: 218px;
+        top: 245px;
+        .catrus-hww__loader-item__num {
+          border: 10px solid rgba(255,255,255,.1);
+          background-clip: padding-box;
+          bottom: -30px;
+          left: 55px;
+        }
+      }
+      &:nth-child(2) {
+        right: 238px;
+        top: 730px;
+        .catrus-hww__loader-item__num {
+          top: -77px;
+          left: 38px;
+        }
+        .catrus-hww__loader-item__text {
+          top: -72px;
+          left: 95px;
+          width: 200px;
+        }
+      }
+      &:nth-child(3) {
+        right: 483px;
+        top: 1015px;
+        .catrus-hww__loader-item__num {
+          top: -110px;
+          left: 54px;
+        }
+        .catrus-hww__loader-item__text {
+          width: 250px;
+          top: -40px;
+          left: -26px;
+        }
+      }
+      &:nth-child(4) {
+        left: 405px;
+        top: 1015px;
+        .catrus-hww__loader-item__num {
+          top: -110px;
+          left: 127px;
+        }
+        .catrus-hww__loader-item__text {
+          width: 300px;
+          top: -40px;
+          left: 20px;
+        }
+      }
+      &:nth-child(5) {
+        left: 214px;
+        top: 718px;
+        .catrus-hww__loader-item__num {
+          background: #27d93a;
+          color: #fff;
+          top: -66px;
+          left: 119px;
+        }
+        .catrus-hww__loader-item__text {
+          width: 300px;
+          top: -60px;
+          left: -45px;
+        }
+      }
+      &:nth-child(6) {
+        left: 205px;
+        top: 315px;
+        .catrus-hww__loader-item__num {
+          background: none;
+          width: auto;
+          height: auto;
+          color: #fff;
+          top: 18px;
+          left: 182px;
+          display: flex;
+          flex-direction: column;
+          &-val {
+            width: 30px;
+            height: 30px;
+            background: $orange-default;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            font-size: 12px;
+          }
+          &-subtext {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            margin-top: 15px;
+            span {
+              margin-top: 5px;
+              font-size: 12px;
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+        .catrus-hww__loader-item__text {
+          font-size: 24px;
+          width: 400px;
+          bottom: -55px;
+          left: 65px;
+        }
+      }
+    }
+  }
+}
