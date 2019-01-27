@@ -4,7 +4,9 @@
             <h1 class="catrus-hww__title">How we work</h1>
             <div class="catrus-hww__loader">
                 <div class="catrus-hww__loader-item">
-                    <div class="catrus-hww__loader-item__text">place order</div>
+                    <div class="catrus-hww__loader-item__text">
+                        <img src="../../assets/hww-place-order.svg" alt="">
+                    </div>
                     <div class="catrus-hww__loader-item__num">1</div>
                     <div class="catrus-hww__loader-item__img">
                         <svg xmlns="http://www.w3.org/2000/svg" width="242" height="180" viewBox="0 0 242 180">
