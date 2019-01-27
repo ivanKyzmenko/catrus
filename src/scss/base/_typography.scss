@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
+@font-face {
+  font-family: 'MarkPro';
+  src: url('./assets/fonts/MarkPro-Normal.ttf');
+}
+
 * {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'MarkPro', monospace;
 }
