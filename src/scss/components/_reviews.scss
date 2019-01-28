@@ -1,9 +1,11 @@
 .catrus-reviews {
+  width: 1200px;
   &__title {
     font-size: 40px;
     line-height: 1.25;
     text-align: center;
     color: $dark-blue;
+    margin: 125px auto 10px auto;
   }
   &__subtitle {
     font-size: 24px;
@@ -12,21 +14,20 @@
     color: $dark-blue;
   }
   &__list {
-    margin-top: 120px;
+    margin-top: 140px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     &-item {
       width: 33%;
-      margin: 15px 0;
-      padding: 20px;
+      padding: 20px 25px;
       position: relative;
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
       cursor: pointer;
-      transition: .2s;
+      transition: .1s;
       &__rates {
         position: absolute;
         right: 0px;
@@ -73,9 +74,8 @@
       &:hover {
         background: #fff;
         border-radius: 4px;
-        box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2);
         transform: scale(1.1);
-        transition: .2s;
+        transition: .1s;
         z-index: 999;
         .catrus-reviews__list-item__rates {
           width: 80px;
@@ -83,23 +83,87 @@
           top: -20px;
           right: 20px;
           background-color: $orange-default;
+          z-index: 9;
           background-image: url("./assets/icons/group-48.svg");
           background-repeat: no-repeat;
           background-position: 50% 95%;
         }
+        .catrus-reviews__list-item__overlay {
+          height: 92px;
+        }
         .catrus-reviews__list-item__desc {
           height: auto;
-          max-height: 200px;
           overflow-y: auto;
+          position: absolute;
+          left: 0;
+          padding: 20px;
+          top: 20px;
+          background: #fff;
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
         }
       }
     }
   }
   &__more {
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    &-circle {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(45deg, #ff5404, #ffa424);
+      border-radius: 50%;
+      top: -250px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 50%;
+        border: 80px solid rgba(255, 255, 255, 0.6);
+        background-clip: padding-box;
+        top: -80px;
+        left: -80px;
+        filter: blur(5px);
+      }
+    }
+    &-rest {
+      position: absolute;
+      top: -59px;
+      left: 221px;
+    }
+    &-actions {
+      position: absolute;
+      z-index: 10;
+      top: -177px;
+      &__btn {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: $dark-grey-blue;
+        width: 210px;
+        height: 44px;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0 10px 20px -5px rgba(121, 134, 153, 0.25), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        text-transform: uppercase;
+      }
+      &__current {
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 15px;
+        span {
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
   }
 }

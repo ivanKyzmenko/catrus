@@ -2,7 +2,12 @@
   height: 80px;
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  display: flex;
+  &__inside {
+    width: 1423px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+  }
   &__left {
     display: flex;
     &-mobile {
@@ -28,11 +33,11 @@
   &__center {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 50px;
     &-img {
-      margin-right: 10px;
-      width: 24px;
-      height: 24px;
+      margin-right: 20px;
+      width: 34px;
+      height: 34px;
       &__mobile {
         display: none;
       }
@@ -46,11 +51,13 @@
       flex-direction: column;
       &__title {
         margin: 0 0 10px 0;
+        font-size: 12px;
       }
       &__phone {
         color: $orange-default;
         font-weight: 700;
         position: relative;
+        font-size: 12px;
         &:before {
           content: '⯆';
           position: absolute;
@@ -65,11 +72,12 @@
     justify-content: flex-end;
     align-items: center;
     &-bell {
-      margin-right: 20px;
+      margin-right: 40px;
     }
     &-account {
       display: flex;
       align-items: center;
+      margin-right: 95px;
       &__avatar {
         width: 50px;
         height: 50px;
@@ -141,6 +149,10 @@
         color: #fff;
         font-size: 12px;
         bottom: -25px;
+        z-index: 9;
+        b {
+          margin-left: 5px;
+        }
       }
     }
   }

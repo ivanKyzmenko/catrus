@@ -1,13 +1,14 @@
 .catrus-hww {
   height: 1320px;
-  background-color: $orange-default;
-  background-image: url("./assets/radianDiagram.svg");
-  background-repeat: no-repeat;
-  background-position: 50% -150%;
-  margin-top: 60px;
-  .container-fit {
+  margin-top: 90px;
+  background: $orange-default;
+  &-inside {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/radianDiagram.svg");
+    background-position: 50% -150%;
+    background-repeat: no-repeat;
     position: relative;
-    padding-top: 120px;
   }
   &__title {
     text-align: center;
@@ -20,6 +21,7 @@
     line-height: 1.25;
     letter-spacing: normal;
     color: #ffffff;
+    padding-top: 120px;
     &:before {
       content: '';
       position: absolute;
@@ -30,29 +32,39 @@
       bottom: -40px;
     }
   }
-  &__circle {
+  &__center {
     position: absolute;
-    border-radius: 50%;
-    background: rgba(0,0,0,0);
-    &-1 {
-      width: 230px;
-      height: 230px;
-      left: calc(50% - 145px);
-      top: calc(50% + 228px);
-      border: 25px solid rgba(255,255,255,.3);
-      z-index: 2;
-    }
-    &-2 {
-      width: 280px;
-      height: 280px;
-      left: calc(50% - 145px);
-      top: calc(50% + 228px);
-      border: 50px solid rgba(255,255,255,.2);
-      z-index: 3;
+    width: 400px;
+    height: 400px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    &-img {
+      position: absolute;
+      &__1 {
+        width: 345px;
+        height: 267px;
+        left: calc(50% - 141px);
+        top: 32px;
+        z-index: 3;
+      }
+      &__2 {
+        width: 64px;
+        height: 64px;
+        left: calc(50% - 115px);
+        top: 10px;
+        z-index: 3;
+      }
+      &__3 {
+        top: -502px;
+        left: -432px;
+        z-index: 2;
+      }
     }
   }
   &__loader {
     &-item {
+      width: 100%;
+      height: 185px;
       position: absolute;
       z-index: 999;
       &__num {
@@ -78,8 +90,8 @@
         color: #ffffff;
       }
       &:nth-child(1) {
-        right: 218px;
-        top: 245px;
+        right: -460px;
+        top: -214px;
         .catrus-hww__loader-item__num {
           border: 10px solid rgba(255,255,255,.1);
           background-clip: padding-box;
@@ -92,8 +104,8 @@
         }
       }
       &:nth-child(2) {
-        right: 238px;
-        top: 730px;
+        right: -510px;
+        top: 273px;
         .catrus-hww__loader-item__num {
           top: -77px;
           left: 38px;
@@ -105,8 +117,8 @@
         }
       }
       &:nth-child(3) {
-        right: 483px;
-        top: 1015px;
+        right: -295px;
+        top: 556px;
         .catrus-hww__loader-item__num {
           top: -110px;
           left: 54px;
@@ -118,8 +130,8 @@
         }
       }
       &:nth-child(4) {
-        left: 405px;
-        top: 1015px;
+        left: -116px;
+        top: 557px;
         .catrus-hww__loader-item__num {
           top: -110px;
           left: 127px;
@@ -131,8 +143,8 @@
         }
       }
       &:nth-child(5) {
-        left: 214px;
-        top: 718px;
+        left: -306px;
+        top: 260px;
         .catrus-hww__loader-item__num {
           background: #27d93a;
           color: #fff;
@@ -146,15 +158,15 @@
         }
       }
       &:nth-child(6) {
-        left: 205px;
-        top: 315px;
+        left: -316px;
+        top: -144px;
         .catrus-hww__loader-item__num {
           background: none;
           width: auto;
           height: auto;
           color: #fff;
           top: 18px;
-          left: 182px;
+          left: 187px;
           display: flex;
           flex-direction: column;
           &-val {
@@ -187,10 +199,23 @@
         .catrus-hww__loader-item__text {
           font-size: 24px;
           width: 400px;
-          bottom: -55px;
+          bottom: -44px;
           left: 65px;
         }
       }
+    }
+  }
+  &__circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0,0,0,0);
+    &-1 {
+      width: 280px;
+      height: 280px;
+      left: calc(50% - 145px);
+      top: calc(50% + 228px);
+      border: 80px solid #ffa64e;
+      z-index: 3;
     }
   }
 }

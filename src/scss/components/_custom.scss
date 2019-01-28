@@ -1,5 +1,8 @@
 .catrus-custom {
-  margin-top: 40px;
+  margin-top: 140px;
+  .container-fit {
+    width: 1130px;
+  }
   &__title {
     font-size: 48px;
     font-weight: bold;
@@ -7,7 +10,7 @@
     letter-spacing: normal;
     text-align: center;
     color: $dark-blue;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     padding: 0 140px;
   }
   &__subtitle {
@@ -15,9 +18,10 @@
     line-height: 1.43;
     text-align: center;
     color: $dark-blue;
+    margin: 0;
   }
   &__data {
-    margin-top: 120px;
+    margin-top: 160px;
     width: 50%;
     &-title {
       font-size: 24px;
@@ -39,7 +43,7 @@
   &__bottom {
     background: $bg-orange;
     height: 320px;
-    margin-top: 80px;
+    margin-top: 50px;
     .container-fit {
       display: flex;
       justify-content: space-between;

@@ -11,17 +11,22 @@
 
                 <h2 class="catrus-reviews__list-item__title">{{review.title}}</h2>
                 <h5 class="catrus-reviews__list-item__order">{{review.order}}</h5>
+                <div class="catrus-reviews__list-item__overlay"></div>
                 <div class="catrus-reviews__list-item__desc">{{review.desc}}</div>
             </div>
         </div>
 
         <div class="catrus-reviews__more">
             <div class="catrus-reviews__more-actions">
-                <button class="catrus-reviews__more-btn">show more reviews</button>
-                <div class="catrus-reviews__more-current">376 of 59.393</div>
+                <button class="catrus-reviews__more-actions__btn">show more reviews</button>
+                <div class="catrus-reviews__more-actions__current">
+                    376
+                    <span>of</span>
+                    59.393
+                </div>
             </div>
-
-            <img src="../../assets/reviews-bg.png" alt="">
+            <div class="catrus-reviews__more-circle"></div>
+            <img class="catrus-reviews__more-rest" src="../../assets/reviews-bg.png" alt="">
         </div>
     </div>
 </template>
