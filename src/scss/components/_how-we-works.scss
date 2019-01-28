@@ -1,9 +1,9 @@
 .catrus-hww {
   height: 1320px;
   background-color: $orange-default;
-  background-image: url("./assets/round-bg.png");
+  background-image: url("./assets/radianDiagram.svg");
   background-repeat: no-repeat;
-  background-position: 52% 46%;
+  background-position: 50% -150%;
   margin-top: 60px;
   .container-fit {
     position: relative;
@@ -30,9 +30,31 @@
       bottom: -40px;
     }
   }
+  &__circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0,0,0,0);
+    &-1 {
+      width: 230px;
+      height: 230px;
+      left: calc(50% - 145px);
+      top: calc(50% + 228px);
+      border: 25px solid rgba(255,255,255,.3);
+      z-index: 2;
+    }
+    &-2 {
+      width: 280px;
+      height: 280px;
+      left: calc(50% - 145px);
+      top: calc(50% + 228px);
+      border: 50px solid rgba(255,255,255,.2);
+      z-index: 3;
+    }
+  }
   &__loader {
     &-item {
       position: absolute;
+      z-index: 999;
       &__num {
         position: absolute;
         color: $orange-default;

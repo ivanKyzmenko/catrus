@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1286px" height="1286px" viewBox="0 0 1286 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="53.9967603%" x2="88.2654056%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#27D93A" offset="0%"></stop>
+            <stop stop-color="#EAFD02" offset="26.9304875%"></stop>
+            <stop stop-color="#EDE903" offset="73.6512079%"></stop>
+            <stop stop-color="#FF5805" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF690C" x="0" y="0" width="1286" height="1286"></rect>
+        <g id="Group">
+            <rect id="Rectangle" x="0" y="0" width="1286" height="1286"></rect>
+            <path d="M251.672635,726.635605 C291.374789,892.309124 440.458109,1015.4553 618.303761,1015.4553 C826.515112,1015.4553 995.303761,846.666653 995.303761,638.455302 C995.303761,549.070187 964.19628,466.950614 912.216661,402.331924" id="Path-Copy-3" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="5" transform="translate(623.488198, 708.893613) rotate(20.000000) translate(-623.488198, -708.893613) "></path>
+            <path d="M276.368874,729.771413 C316.071028,895.444932 465.154349,1018.59111 643,1018.59111 C851.211351,1018.59111 1020,849.802461 1020,641.59111 C1020,552.205995 988.892519,470.086422 936.9129,405.467732" id="Path" stroke="url(#linearGradient-1)" stroke-width="3"></path>
+        </g>
+    </g>
+</svg>

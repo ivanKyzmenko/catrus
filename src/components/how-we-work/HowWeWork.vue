@@ -2,6 +2,21 @@
     <div class="catrus-hww container">
         <div class="container-fit">
             <h1 class="catrus-hww__title">How we work</h1>
+
+            <div class="catrus-hww__circle catrus-hww__circle-1"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-2"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-3"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-4"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-5"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-6"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-71"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-8"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-91"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-10"></div>
+            <div class="catrus-hww__circle catrus-hww__circle-11"></div>
+
+
+            <img src="../../assets/round-bg.png" class="catrus-hww__main">
             <div class="catrus-hww__loader">
                 <div class="catrus-hww__loader-item">
                     <div class="catrus-hww__loader-item__text">
@@ -272,7 +287,7 @@
                     <div class="catrus-hww__loader-item__text">A qualified writer is assigned</div>
                     <div class="catrus-hww__loader-item__num">2</div>
                     <div class="catrus-hww__loader-item__img">
-                        <img src="../../assets/hww2.jpg" alt="">
+                        <img src="../../assets/scene-2.png" alt="">
                     </div>
                 </div>
                 <div class="catrus-hww__loader-item">
